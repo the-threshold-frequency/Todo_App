@@ -31,4 +31,4 @@ st.date_input(label="", key="date")
 st.time_input(label="", key="time")
 st.button(label="Add Task", on_click=add, key="button")
 
-
+st.write("Managed by Krittika Seth (PA and Wife of Preetraj Haldar)")
