@@ -6,7 +6,6 @@ from modules import functions
 def add():
     task = functions.get_tasks()
     date = str(st.session_state["date"])
-    time = str(st.session_state["time"])
     new_task = st.session_state["todo"] + " " + "(" + date + "; " + time + ")" + "\n"
     task.append(new_task)
     functions.write_tasks(task)
@@ -28,7 +27,6 @@ for index, todo in enumerate(tasks):
 
 st.text_input(label="", placeholder="Enter New Task...", key="todo")
 st.date_input(label="", key="date")
-st.time_input(label="", key="time")
 st.button(label="Add Task", on_click=add, key="button")
 
 st.write("Managed by Krittika Seth (PA and Wife of Preetraj Haldar)")
