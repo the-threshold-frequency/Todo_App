@@ -6,7 +6,7 @@ from modules import functions
 def add():
     task = functions.get_tasks()
     date = str(st.session_state["date"])
-    new_task = st.session_state["todo"] + " " + "(" + date + "; " + time + ")" + "\n"
+    new_task = st.session_state["todo"] + " " + "(" + date + ")" + "\n"
     task.append(new_task)
     functions.write_tasks(task)
 
