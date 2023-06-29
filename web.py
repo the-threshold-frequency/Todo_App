@@ -28,5 +28,3 @@ for index, todo in enumerate(tasks):
 st.text_input(label="", placeholder="Enter New Task...", key="todo")
 st.date_input(label="", key="date")
 st.button(label="Add Task", on_click=add, key="button")
-
-st.write("Managed by Krittika Seth (PA and Wife of Preetraj Haldar)")
